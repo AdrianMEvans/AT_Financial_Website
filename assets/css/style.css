@@ -874,16 +874,16 @@ section {
     margin-bottom: 30px;
   }
   #service .service-img img {
-    width: 70%;
+    width: 90%;
   }
 }
 @media (max-width: 575px) {
   #service .service-img img {
-    width: 80%;
+    width: 90%;
   }
   #service .btn-get-started {
     font-size: 16px;
-    padding: 10px 24px 11px 24px;
+    padding: 10px 24px 10px 24px;
   }
 }
 
