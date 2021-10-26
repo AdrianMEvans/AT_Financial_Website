@@ -448,6 +448,149 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
+
+
+/*--------------------------------------------------------------
+# Service Hero Section
+--------------------------------------------------------------*/
+
+
+#servicehero {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(22, 30, 56, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+#servicehero .carousel, #servicehero .carousel-inner, #servicehero .carousel-item, #servicehero .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#servicehero .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#servicehero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+}
+#servicehero .container {
+  text-align: center;
+}
+#servicehero h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+#servicehero p {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+#servicehero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+#servicehero .carousel-inner .carousel-item,
+#servicehero .carousel-inner .active.carousel-item-start,
+#servicehero .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+#servicehero .carousel-inner .active,
+#servicehero .carousel-inner .carousel-item-next.carousel-item-start,
+#servicehero .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+#servicehero .carousel-control-next-icon, #servicehero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#servicehero .carousel-control-next-icon:hover, #servicehero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+#servicehero .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#servicehero .carousel-indicators li.active {
+  opacity: 1;
+  background: #006fbe;
+}
+#servicehero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  background: #006fbe;
+}
+#servicehero .btn-get-started:hover {
+  background: #007ed8;
+}
+@media (max-width: 992px) {
+  #servicehero {
+    height: 70vh;
+  }
+  #servicehero .carousel-container {
+    top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  #servicehero h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  #servicehero .carousel-control-prev, #servicehero .carousel-control-next {
+    width: 5%;
+  }
+}
+@media (max-height: 500px) {
+  #servicehero {
+    height: 120vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -788,11 +931,14 @@ section {
 --------------------------------------------------------------*/
 #service {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background: #082150;
 }
 #service .container {
-  padding-top: 100px;
+  padding-top: 60px;
+  background-image: url(/assets/img/AdobeStock_113685095_Preview.jpg);
+  background-size: cover;
+ background-repeat: no-repeat;
 }
 #service h1 {
   margin: 0 0 10px 0;
@@ -860,7 +1006,7 @@ section {
     text-align: center;
   }
   #service .service-img img {
-    width: 50%;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {

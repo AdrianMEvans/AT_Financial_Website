@@ -50,7 +50,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#servicehero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
           <!-- <li><a class="nav-link   scrollto" href="#portfolio">Portfolios</a></li> -->
@@ -83,28 +83,40 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Service Section ======= -->
-  <section id="service" class="d-flex align-items-center">
+  <section id="servicehero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-          data-aos="fade-up" data-aos-delay="200">
-          <h1>Insurance</h1>
-          <h2>Our team of advisers are standing by to attend to your investment requirements</h2>
-          <p>Do you have an existing insurance policy you have not reviewed for a while? At A&T Financial Advisers we can review your existing policies to ensure they remain appropriate to your current situation.</p>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          </div>
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/AdobeStock_113685095_Preview.jpg)">
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 service-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/services/Insurance.jpg" class="img-fluid animated" alt="">
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
         </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+        </div>
+
       </div>
-    </div>
 
-  </section><!-- End Hero -->
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section>
+
+  
+  <!-- ======= Service Section ======= -->
 
   <main id="main">
 
