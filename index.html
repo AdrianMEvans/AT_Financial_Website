@@ -101,8 +101,8 @@
     <!-- ======= Clients Section ======= -->
     <section id="cliens" class="cliens section-bg">
       <div class="container">
-        
-        
+
+
         <div class="row" data-aos="zoom-in">
           <div class="row justify-content-center">Some of our service providers</div>
 
@@ -305,7 +305,10 @@
                 <h4>Geoffrey Luck</h4>
                 <span>Partner & Director</span>
                 <p>Geoff is a Chartered Accountant admitted to the Institute of Chartered Accountants of Australia and
-                  New Zealand. Click here for more ...</p>
+                  New Zealand.
+                  <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#geoff-modal" role="button">Click here
+                    to learn more</a>
+                </p>
                 <div class="social">
                   <a href="mailto:geoff@atfinancial.com"><i class="ri-mail-fill"></i></a>
                   <a href="tel:+614"><i class="ri-phone-fill"></i></a>
@@ -323,7 +326,10 @@
                 <h4>Tim Vander Kraats</h4>
                 <span>Director</span>
                 <p>Tim is a Chartered Accountant and Financial Adviser specialising in superannuation, retirement
-                  planning and risk advice. Click here for more ...</p>
+                  planning and risk advice.
+                  <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#tim-modal" role="button">Click here to
+                    learn more</a>
+                </p>
                 <div class="social">
                   <a href="mailto:tim@atfinancial.com.au"><i class="ri-mail-fill"></i></a>
                   <a href="tel:+61429337533"><i class="ri-phone-fill"></i></a>
@@ -598,6 +604,59 @@
 
   </main><!-- End #main -->
 
+
+  <!--- Tim Modal -->
+  <div class="modal fade" id="tim-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tim Vander Kraats</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Tim is a Financial Adviser and Chartered Accountant, having completed his Bachelor of Commerce Degree
+            majoring in Accounting and Finance from Notre Dame and admitted to the Institute of Chartered Accountants of
+            Australia and New Zealand in 2011. Tim started his career in accounting at Athans & Taylor Joondalup in 2007
+            and currently practices as a Financial Adviser (Director) of A&T Financial Advisers, specialising in
+            superannuation, retirement planning and risk advice. Tim is accredited as a CA SMSF Specialist and serves as
+            a committee member for the specialist group.</p>
+          <p>Tim is an Authorised Representative of Synchron (AFSL 243313) and Registered Tax (Financial) Adviser with
+            the Tax Practitioners Board.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Geoff Modal-->
+  <div class="modal fade" id="geoff-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Geoffrey Luck</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Geoff is a Chartered Accountant having been admitted to the Institute of Chartered Accountants of Australia
+            and New Zealand in 1982 and is also a licensed Financial Adviser. Geoff commenced his business career with
+            Peat Marwick Mitchell and Co. (now known as KPMG) in their audit division and spent nine years within that
+            discipline including two years in overseas offices. Geoff spent a further two years as manager within their
+            business services division before leaving to join Athans & Taylor Joondalup. Geoff is currently the managing
+            director of A&T Financial Advisers focussing on wealth creation and retirement planning.</p>
+          <p>Geoff is an Authorised Representative of Synchron (AFSL 243313) and Registered Tax Agent with the Tax
+            Practitioners Board.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -676,6 +735,8 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

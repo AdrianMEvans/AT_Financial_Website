@@ -4,8 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 (function() {
   "use strict";
+
+ 
 
   /**
    * Easy selector helper function
@@ -39,7 +42,6 @@
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
-
   /**
    * Navbar links active state on scroll
    */
@@ -253,5 +255,5 @@
       mirror: false
     });
   });
-
+  
 })()
