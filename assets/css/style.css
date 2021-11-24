@@ -131,6 +131,31 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+@media (max-width: 768px) {
+  #header .logo img {
+    max-height: 40px;
+    padding-right: 10px;
+  }
+  #header .logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 375px) {
+  #header .logo img {
+    max-height: 40px;
+  }
+  #header .logo a {
+    visibility: hidden;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
