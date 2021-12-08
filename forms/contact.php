@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'adrian@thefullstackers.com';
+  $receiving_email_address = 'info@atfinancial.com.au';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -26,9 +26,9 @@
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
   // $contact->smtp = array(
-  //   'host' => 'srv48.hostserv.co.za',
-  //   'username' => 'adrian@rhinolinings.co.za',
-  //   'password' => 'Y3in@rhinolinings',
+  //   'host' => 'hostservergoeshere',
+  //   'username' => 'usernamegoeshere',
+  //   'password' => 'passwordgoeshere',
   //   'port' => '587'
   // );
   
