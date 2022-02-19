@@ -24,7 +24,7 @@
   $contact->subject = $_POST['subject'];
 
 
-  $headers->Reply_To = $_POST['email'];
+  
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
