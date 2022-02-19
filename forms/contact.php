@@ -41,7 +41,7 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message Subject', 10);
 
-
+  $contact->bcc = array('adrian@polywhiz.com', 'adrian@thefullstackers.com');
 
   echo $contact->send();
 ?>
