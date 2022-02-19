@@ -36,13 +36,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script type="text/javascript">
-    var onloadCallback = function() {
-      grecaptcha.render('html_element', {
-        'sitekey' : '6Lf8W4seAAAAAFf00iGyO58mNOij6QydaR9XTsgJ'
-      });
-    };
-  </script>
 </head>
 
 <body>
@@ -579,7 +572,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LctR4seAAAAAJ5xGe2lhJeg8-5LJ8n1X5yHfF4t">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -603,7 +596,6 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="g-recaptcha" data-sitekey="6Lf8W4seAAAAAFf00iGyO58mNOij6QydaR9XTsgJ"></div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -755,9 +747,8 @@
   <script src="./assets/vendor/php-email-form/validate.js"></script>
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-  async defer>
-</script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LctR4seAAAAAJ5xGe2lhJeg8-5LJ8n1X5yHfF4t"></script>
+
   <!-- Template Main JS File -->
   <script src="./assets/js/main.js"></script>
 
