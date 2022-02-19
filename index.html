@@ -36,6 +36,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('html_element', {
+        'sitekey' : '6LctR4seAAAAAJ5xGe2lhJeg8-5LJ8n1X5yHfF4t'
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -596,6 +603,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+              <div class="g-recaptcha" data-sitekey="6LctR4seAAAAAJ5xGe2lhJeg8-5LJ8n1X5yHfF4t"></div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -747,8 +755,9 @@
   <script src="./assets/vendor/php-email-form/validate.js"></script>
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LctR4seAAAAAJ5xGe2lhJeg8-5LJ8n1X5yHfF4t"></script>
-
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  async defer>
+</script>
   <!-- Template Main JS File -->
   <script src="./assets/js/main.js"></script>
 
