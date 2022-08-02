@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'info@atfinancial.com.au';
+  $receiving_email_address = 'adrian@thefullstackers.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -19,7 +19,7 @@
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
-  $contact->mailer = "info@atfinancial.com.au";
+  $contact->mailer = "adrian@thefullstackers.com";
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
@@ -41,7 +41,7 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message Subject', 10);
 
-  $contact->bcc = array('adrian@polywhiz.com');
+  $contact->bcc = array('adrian@polywhiz.com', 'adrian@thefullstackers.com');
 
   $contact->recaptcha_secret_key = '6LctR4seAAAAAGOZTqkeeScyZC8wAGwBAZtHLkWy';
 
