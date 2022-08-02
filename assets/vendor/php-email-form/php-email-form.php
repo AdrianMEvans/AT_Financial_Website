@@ -28,7 +28,7 @@ class PHP_Email_Form {
   public $cc = [];
   public $bcc = [];
   public $honeypot = '';
-  public $recaptcha_secret_key = false;
+  public $recaptcha_secret_key = true;
 
   public $error_msg = array(
     'invalid_to_email' => 'Email to (receiving email address) is empty or invalid!',
