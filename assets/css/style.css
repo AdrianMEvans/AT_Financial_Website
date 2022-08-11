@@ -1600,6 +1600,15 @@ section {
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+
+.jotform {
+  background: #fff;
+  border-top: 3px solid #2C9400;
+  border-bottom: 3px solid #2C9400;
+  padding: 30px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
